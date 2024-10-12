@@ -1,0 +1,49 @@
+{
+    "name": "cfw-graphql-photos",
+    "author": "Irfan Abdillah Nasution <irfan.abdillah@gmail.com>",
+    "version": "1.0.0",
+    "module": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "format": "find src -name \"*.ts\" | xargs biome format --write",
+        "check": "find src -name \"*.ts\" | xargs biome check",
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy --minify",
+        "db:generate": "drizzle-kit generate",
+        "db:up": "drizzle-kit up",
+        "db:studio": "drizzle-kit studio"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.3",
+        "@cloudflare/workers-types": "^4.20241011.0",
+        "@types/bun": "^1.1.11",
+        "@types/node": "^22.7.5",
+        "drizzle-kit": "^0.25.0",
+        "wrangler": "^3.80.4"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^9.0.3",
+        "@libsql/client": "^0.14.0",
+        "@oslojs/crypto": "^1.0.1",
+        "@oslojs/encoding": "^1.1.0",
+        "@paralleldrive/cuid2": "^2.2.2",
+        "@pothos/core": "^4.3.0",
+        "@pothos/plugin-dataloader": "^4.1.1",
+        "@pothos/plugin-drizzle": "^0.4.7",
+        "@pothos/plugin-errors": "^4.2.0",
+        "@pothos/plugin-relay": "^4.2.1",
+        "@pothos/plugin-scope-auth": "^4.1.0",
+        "@pothos/plugin-simple-objects": "^4.1.0",
+        "@pothos/plugin-tracing": "^1.1.0",
+        "@pothos/plugin-zod": "^4.1.0",
+        "drizzle-orm": "^0.34.1",
+        "drizzle-zod": "^0.5.1",
+        "graphql": "^16.9.0",
+        "graphql-scalars": "^1.23.0",
+        "graphql-yoga": "^5.7.0",
+        "zod": "^3.23.8"
+    }
+}
