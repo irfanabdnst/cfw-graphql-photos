@@ -1,4 +1,4 @@
-# Cloudflare Graphql Photos Starter
+# Cloudflare Graphql Pothos Starter
 
 To install dependencies:
 
